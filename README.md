@@ -13,3 +13,21 @@ link - https://pjreddie.com/darknet/yolo/
 
 ## Firebase (upload/download) - [03 upload and download from firebase](https://github.com/skystone1000/Object-Detection-Techfest/tree/master/03%20upload%20and%20download%20from%20firebase)
 you can use download.py to download and upload.py to upload any file accoring to your firebase path
+
+
+# Training for Custom Object 
+You can train the YOLO model based on your requirements. I have trained the YOLO model for detecting puppies 
+
+## Labeling - [06 labeling images](https://github.com/skystone1000/Object-Detection-Techfest/tree/master/06%20labeling%20images)
+Initailly you need to download the images having the object and some which do not contain the object. You can do that with the help of a chrome extension very easily. 
+
+Next number them starting from 1 till the end. you can do that with the help of "name.py" file present.
+
+Now you need to generate labels for the bounding boxesyou can do that with boudbox.py, this will generate the text file for all the images.
+
+## Training - [07 training](https://github.com/skystone1000/Object-Detection-Techfest/tree/master/07%20training)
+I have trained the model on google colab you can do it locally if you want. For training on google colb you need download the yolo-master zip and update the classes and add the images
+
+for furthur details look [training.md](https://github.com/skystone1000/Object-Detection-Techfest/blob/master/07%20training/training%20readme.md)
+
+Zip the file again and upload to google drive and then you can run the Tatamakerthon yolo_v2_tiny.ipynb
